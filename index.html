@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
+
+    <title>Sports</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <i>
+            <a href="#">Sports Home</a>
+        </i>
+        <i class="dropdown-link" id="fantasy-dropdown" onmouseover="openDropdown(this.id)"
+            onmouseout="closeDropdown(this.id)">
+            <a href="#">American Football</a>
+            <div class="dropdown-list">
+                <ul>
+                    <li> <a href="#">NFL</a> </li>
+                    <li> <a href="#">NCAA </a> </li>
+                </ul>
+            </div>
+        </i>
+        <i>
+            <a href="#">Basketball</a>
+        </i>
+        <i>
+            <a href="#">Hockey</a>
+        </i>
+        <i class="dropdown-link" id="mlb-dropdown" onmouseover="openDropdown(this.id) "
+            onmouseout="closeDropdown(this.id)">
+            <a href="#">Soccer</a>
+            <div class="dropdown-list">
+                <ul>
+                    <li> <a href="#">Fantasy Home </a> </li>
+                    <li> <a href="#">Fantasy Football </a> </li>
+                    <li> <a href="#">Weekly Rankings </a> </li>
+                    <li> <a href="#">Stat Tracker </a> </li>
+                    <li> <a href="#">Daily Fantasy </a> </li>
+                    <li> <a href="#">Fantasy Profile </a> </li>
+                    <li> <a href="#">Yahoo Sports Experts </a> </li>
+                    <li> <a href="#">Fantasy State </a> </li>
+                    <li> <a href="#">Fantasy Baseball </a> </li>
+                    <li> <a href="#">Fantasy Basketball </a> </li>
+                    <li> <a href="#">Fantasy Hockey </a> </li>
+                </ul>
+            </div>
+        </i>
+        <i>
+            <a href="#">Golf</a>
+        </i>
+        <i>
+            <a href="#">CS:GO</a>
+        </i>
+        <i>
+            <a href="#">LOL</a>
+        </i>
+        <i>
+            <a href="#">MMA</a>
+        </i>
+
+        <!-- <i id="dropDown">
+                  <svg class="Cur(p)" width="15" height="14" viewBox="0 0 96 96" data-icon="StreamShare" style="vertical-align: middle; cursor: pointer; margin-top: -1px; color: rgb(0, 0, 0); fill: rgb(0, 0, 0); stroke: rgb(0, 0, 0); stroke-width: 0;">
+                      <path d="M16 38c-5.516 0-10 4.477-10 10 0 5.525 4.484 10 10 10 5.53 0 10-4.475 10-10 0-5.523-4.47-10-10-10zM48 38c-5.516 0-10 4.477-10 10 0 5.525 4.484 10 10 10 5.53 0 10-4.475 10-10 0-5.523-4.47-10-10-10zM80 38c-5.516 0-10 4.477-10 10 0 5.525 4.484 10 10 10 5.53 0 10-4.475 10-10 0-5.523-4.47-10-10-10z"></path>
+                  </svg>
+                  <ul class="drop">
+                      <i style="cursor: pointer;">GameChannel</i>
+                  </ul>
+              </i> -->
+    </ul>
+</nav>
+
+    <div class="tabs">
+        <ul>
+            <li class="summaryLink active" onclick="changeTab(&#39;summary&#39;,event)">Summary</li>
+            <li class="statsLink" onclick="changeTab(&#39;stats&#39;,event)">Stats</li>
+            <li class="teamLink" onclick="changeTab(&#39;team&#39;,event)">Team Comarison</li>
+        </ul>
+    </div>
+
+    <div class="tabContiner">
+
+        <div class="summary showTab">
+            <div class="odds">
+                <!-- <h4>Odds</h4> -->
+                <div class="oddscontiner">
+
+                </div>
+            </div>
+
+            <div class="inj-stat">
+
+                <div class="injuries">
+                    <div class="header">
+                        <h4>Injuries</h4>
+                        <a href="#">View All Injuries &nbsp; &gt;</a>
+                    </div>
+                    <div class="body">
+                        <div class="los">
+                            <div class="logo">
+                                <img src="./assets/los.png" alt="los.png">
+                                <span>Los Angeles Rams</span>
+                            </div>
+
+                            <table cellspacing="0">
+                                <tbody><tr>
+                                    <th>PLayer</th>
+                                    <th>Pos</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/Brian Allen.png" alt="avatar">
+                                        <a href="#">Brian Allen</a>
+                                    </td>
+                                    <td>C</td>
+                                    <td>Doubtful (Knee)</td>
+                                    <td>11/23</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/Taylor Rapp.png" alt="avatar">
+                                        <a href="#">Taylor Rapp</a>
+                                    </td>
+                                    <td>S</td>
+                                    <td>IR (Sprained MCL)</td>
+                                    <td>11/17</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/Andrew Whitworth.png" alt="avatar">
+                                        <a href="#">Andrew Whitworth</a>
+                                    </td>
+                                    <td>T</td>
+                                    <td>IR (Knee)</td>
+                                    <td>11/17</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+
+                        <div class="tampa">
+                            <div class="logo">
+                                <img src="./assets/tampa.png" alt="tampa.png">
+                                <span>Tampa Bay Buccaneers</span>
+                            </div>
+
+                            <table cellspacing="0">
+                                <tbody><tr >
+                                    <th>PLayer</th>
+                                    <th>Pos</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/ali.png" alt="avatar">
+                                        <a href="#">Ali Marpet</a>
+                                    </td>
+                                    <td>G</td>
+                                    <td>Doubtful (Concussion)</td>
+                                    <td>11/23</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/Tanner Hudson.png" alt="avatar">
+                                        <a href="#">Tanner Hudson</a>
+                                    </td>
+                                    <td>TE</td>
+                                    <td>Out (Not injury related)</td>
+                                    <td>11/23</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/Jack Cichy.png" alt="avatar">
+                                        <a href="#">Jack Cichy</a>
+                                    </td>
+                                    <td>LB</td>
+                                    <td>Injured Reserve (Undisclosed)</td>
+                                    <td>10/12</td>
+                                </tr>
+                            </tbody></table>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="leaders">
+                    <div class="header">
+                        <h4>Stat Leaders</h4>
+                    </div>
+                    <div class="body">
+                        <div class="teamNames">
+                            <div class="losTeam">
+                                <img src="./assets/los.png" alt="los">
+                                <span>Los Angeles Rams</span>
+                            </div>
+                            <div class="tampaTeam">
+
+                                <span>Tampa Bay Buccaneers</span>
+                                <img src="./assets/tampa.png" alt="tampa">
+                            </div>
+                        </div>
+                        <div class="comparison">
+                            <div class="left">
+                                <img class="avatar" src="./assets/Jared Goff.png" alt="Jared">
+                                <p class="name">Jared Goff</p>
+                                <p class="info">271.9 Y/G • 13 TD • 6 Int</p>
+                            </div>
+                            <div class="center">
+                                <div>
+                                    <span>2447</span>
+                                    <div class="blue">.</div>
+                                    <div class="black">.</div>
+                                    <span>2739</span>
+                                </div>
+                                <div>Span yds</div>
+                            </div>
+                            <div class="right">
+                                <img class="avatar" src="./assets/Tom Brady.png" alt="Tom">
+                                <p class="name">Tom Brady</p>
+                                <p class="info">273.9 Y/G • 23 TD • 7 Int</p>
+                            </div>
+                        </div>
+                        <div class="comparison">
+                            <div class="left">
+                                <img class="avatar" src="./assets/Darrell Henderson Jr..png" alt="Darrell">
+                                <p class="name">Darrell Henderson Jr.</p>
+                                <p class="info">102 Rush • 4.8 Avg • 4 TD</p>
+                            </div>
+                            <div class="center">
+                                <div>
+                                    <span>486</span>
+                                    <div class="blue" style="height: 35px;">.</div>
+                                    <div class="black">.</div>
+                                    <span>730</span>
+                                </div>
+                                <div>Span yds</div>
+                            </div>
+                            <div class="right">
+                                <img class="avatar" src="./assets/Ronald Jones II.png" alt="Ronald">
+                                <p class="name">Ronald Jones II</p>
+                                <p class="info">143 Rush • 5.1 Avg • 5 TD</p>
+                            </div>
+                        </div>
+                        <div class="comparison">
+                            <div class="left">
+                                <img class="avatar" src="./assets/Cooper Kupp.png" alt="Cooper">
+                                <p class="name">Cooper Kupp</p>
+                                <p class="info">53 Rec • 10.9 Avg • 2 TD</p>
+                            </div>
+                            <div class="center">
+                                <div>
+                                    <span>577</span>
+                                    <div class="blue" style="height: 50px;">.</div>
+                                    <div class="black" style="height: 45px;">.</div>
+                                    <span>514</span>
+                                </div>
+                                <div>Span yds</div>
+                            </div>
+                            <div class="right">
+                                <img class="avatar" src="./assets/Mike Evans.png" alt="Mike">
+                                <p class="name">Mike Evans</p>
+                                <p class="info">40 Rec • 12.9 Avg • 8 TD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-Comparison">
+                <div class="header">
+                    <h4>Team Comparison</h4>
+                </div>
+                <div class="body">
+                    <div class="compare">
+                        <div class="compare-title">Passing Yards Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">11th</span>
+                            <div class="progressbar">
+                                <div></div>
+                            </div>
+                            <span>271.9</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">9th</span>
+                            <div class="progressbar">
+                                <div style="width: 74.1935%"></div>
+                            </div>
+                            <span>273.9</span>
+                        </div>
+                    </div>
+
+
+                    <div class="compare">
+                        <div class="compare-title">Passing Yards Against Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">2nd</span>
+                            <div class="progressbar">
+                                <div style="width: 96.7742%"></div>
+                            </div>
+                            <span>199.67</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">9th</span>
+                            <div class="progressbar">
+                                <div style=" width: 74.1935%"></div>
+                            </div>
+                            <span>223.70</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Rushing Yards Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">7th</span>
+                            <div class="progressbar">
+                                <div style="width: 80.6452%;"></div>
+                            </div>
+                            <span>134.2</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">21st</span>
+                            <div class="progressbar">
+                                <div style="  width: 35.4839%;"></div>
+                            </div>
+                            <span>103.9</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Rushing Yards Against Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">5th</span>
+                            <div class="progressbar">
+                                <div style="width: 87.0968%;"></div>
+                            </div>
+                            <span>96.78</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">2nd</span>
+                            <div class="progressbar">
+                                <div style="  width: 96.722%;"></div>
+                            </div>
+                            <span>76.60</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Total Yards Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">6th</span>
+                            <div class="progressbar">
+                                <div style="width: 83.871%;"></div>
+                            </div>
+                            <span>406.1</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">15th</span>
+                            <div class="progressbar">
+                                <div style="  width: 54.8387%;"></div>
+                            </div>
+                            <span>377.8</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Total Yards Against Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">1st</span>
+                            <div class="progressbar">
+                                <div style="width: 100%;"></div>
+                            </div>
+                            <span>296.4</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">3rd</span>
+                            <div class="progressbar">
+                                <div style="  width: 93.5484%;"></div>
+                            </div>
+                            <span>300.03</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-games">
+                <div class="header">
+                    <h4>Recent Games</h4>
+                </div>
+                <div class="body">
+                    <table cellspacing="0">
+                        <tbody><tr>
+                            <th colspan="5">
+                                <div>
+                                    <img style="vertical-align: middle" width="30px" src="./assets/los.png" alt="los">
+                                    <span>Los Angeles Rams</span>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Nov 16</td>
+                            <td>vs</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_SEA_wbg.png" alt="sea"> Seattle</td>
+                            <td class="win">W</td>
+                            <td>23-16</td>
+                        </tr>
+                        <tr>
+                            <td>Nov 1</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_MIA_wbg.png" alt="mia"> Miami</td>
+                            <td class="loss">L</td>
+                            <td>28-17</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 27</td>
+                            <td>vs</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/bears_wbg.png" alt="chi"> Chicago</td>
+                            <td class="win">W</td>
+                            <td>24-10</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 19</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_SF_wbg.png" alt="sf"> San Francisco</td>
+                            <td class="loss">L</td>
+                            <td>24-16</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 11</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/washington_wbg.png" alt="wash"> Washington</td>
+                            <td class="win">W</td>
+                            <td>30-10</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <div style="text-align: left;">
+                                    <a href="#" style="">LA Rams Schedule</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+
+                    <table cellspacing="0">
+                        <tbody><tr>
+                            <th colspan="5">
+                                <div>
+                                    <img style="" width="30px" src="./assets/tampa.png" alt="tampa">
+                                    <span>Tampa Bay Buccaneers</span>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Nov 15</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_CAR_wbg.png" alt="car"> Carolina</td>
+                            <td class="win">W</td>
+                            <td>46-23</td>
+                        </tr>
+                        <tr>
+                            <td>Nov 9</td>
+                            <td>vs</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_NO_wbg.png" alt="no"> New Orleans</td>
+                            <td class="loss">L</td>
+                            <td>38-3</td>
+                        </tr>
+                        <tr>
+                            <td>Nov 3</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_NYG_wbg.png" alt="nyg"> NY Giants</td>
+                            <td class="win">W</td>
+                            <td>25-23</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 26</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/raiders_wbg.png" alt="las"> Las Vegas</td>
+                            <td class="win">W</td>
+                            <td>45-20</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 19</td>
+                            <td>vs</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_GB_wbg.png" alt="gb"> Green Bay</td>
+                            <td class="win">W</td>
+                            <td>38-10</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <div style="text-align: left;">
+                                    <a href="#" style="">Tampa Bay Schedule</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stats-header">
+                <div onclick="changeStatsTab(&#39;larams&#39;,event)" class="larams-link">LA Rams</div>
+                <div onclick="changeStatsTab(&#39;matchup&#39;,event)" class="matchup-link active-stats">Matchup</div>
+                <div onclick="changeStatsTab(&#39;tampabay&#39;,event)" class="tampabay-link">Tampa Bay</div>
+            </div>
+
+            <div class="stats-body showStatsTab showMatchupStatsTab">
+
+                <div style="width: 100%" class="ststs-tems">
+                    <div class="logo">
+                        <img src="./assets/los.png" alt="los.png">
+                        <span>Los Angeles Rams</span>
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/tampa.png" alt="tampa.png">
+                        <span> Tampa Bay Buccaneers</span>
+                    </div>
+                </div>
+                <div class="los">
+                    <table cellspacing="0">
+                        <tbody><tr>
+                            <th>Passing</th>
+                            <th>Yds</th>
+                            <th>T/G</th>
+                            <th>TD</th>
+                            <th>Int</th>
+                            <th>QBRat</th>
+                        </tr>
+                        <tr>
+                            <td>J.Goff</td>
+                            <td>2447</td>
+                            <td>271.9</td>
+                            <td>13</td>
+                            <td>6</td>
+                            <td>94.9</td>
+                        </tr>
+                        <tr style="background-color: white; color: white">
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                    </tbody></table>
+                    <table cellspacing="0">
+                        <tbody><tr>
+                            <th>Rushing</th>
+                            <th>Rush</th>
+                            <th>Yds</th>
+                            <th>Avg</th>
+                            <th>TD</th>
+                            <th>FL</th>
+                        </tr>
+                        <tr>
+                            <td>D. Henderson jr.</td>
+                            <td>102</td>
+                            <td>486</td>
+                            <td>4.8</td>
+                            <td>4</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Brown</td>
+                            <td>81</td>
+                            <td>347</td>
+                            <td>4.3</td>
+                            <td>5</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>C. Akers</td>
+                            <td>45</td>
+                            <td>186</td>
+                            <td>4.1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>R. Woods</td>
+                            <td>17</td>
+                            <td>111</td>
+                            <td>6.5</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>J. Goff</td>
+                            <td>29</td>
+                            <td>44</td>
+                            <td>1.5</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>C. Kupp</td>
+                            <td>4</td>
+                            <td>33</td>
+                            <td>8.3</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>G. Everett</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>2.0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+
+                <!-- end of los -->
+
+                <div class="tampa">
+                    <table cellspacing="0">
+                        <tbody><tr>
+                            <th>Passing</th>
+                            <th>Yds</th>
+                            <th>T/G</th>
+                            <th>TD</th>
+                            <th>Int</th>
+                            <th>QBRat</th>
+                        </tr>
+                        <tr>
+                            <td>T. Brady</td>
+                            <td>2739</td>
+                            <td>273.9</td>
+                            <td>23</td>
+                            <td>7</td>
+                            <td>99.0</td>
+                        </tr>
+                        <tr>
+                            <td>B. Grabert</td>
+                            <td>0</td>
+                            <td>0.0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>39.9</td>
+                        </tr>
+                    </tbody></table>
+                    <table cellspacing="0">
+                        <tbody><tr>
+                            <th>Rushing</th>
+                            <th>Rush</th>
+                            <th>Yds</th>
+                            <th>Avg</th>
+                            <th>TD</th>
+                            <th>FL</th>
+                        </tr>
+                        <tr>
+                            <td>R. Jones II</td>
+                            <td>143</td>
+                            <td>730</td>
+                            <td>51</td>
+                            <td>5</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>L. Forurnette</td>
+                            <td>59</td>
+                            <td>244</td>
+                            <td>4.1</td>
+                            <td>2</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>K. Vaughn</td>
+                            <td>8</td>
+                            <td>46</td>
+                            <td>5.8</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>S. Miller</td>
+                            <td>3</td>
+                            <td>14</td>
+                            <td>4.7</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>T. Brady</td>
+                            <td>19</td>
+                            <td>8</td>
+                            <td>0.4</td>
+                            <td>3</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>B. Gabbert</td>
+                            <td>7</td>
+                            <td>1</td>
+                            <td>0.1</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>L. McCoy</td>
+                            <td>6</td>
+                            <td>-1</td>
+                            <td>-0.2</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+
+
+
+          
+        </div>
+
+        <div class="team">
+            <div class="team-Comparison">
+                <div class="header">
+                    <h4>Team Comparison</h4>
+                </div>
+                <div class="body">
+                    <div class="compare">
+                        <div class="compare-title">Passing Yards Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">11th</span>
+                            <div class="progressbar">
+                                <div></div>
+                            </div>
+                            <span>271.9</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">9th</span>
+                            <div class="progressbar">
+                                <div style=" width: 74.1935%"></div>
+                            </div>
+                            <span>273.9</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Passing Yards Against Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">2nd</span>
+                            <div class="progressbar">
+                                <div style="width: 96.7742%"></div>
+                            </div>
+                            <span>199.67</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">9th</span>
+                            <div class="progressbar">
+                                <div style=" width: 74.1935%"></div>
+                            </div>
+                            <span>223.70</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Rushing Yards Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">7th</span>
+                            <div class="progressbar">
+                                <div style="width: 80.6452%;"></div>
+                            </div>
+                            <span>134.2</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">21st</span>
+                            <div class="progressbar">
+                                <div style=" width: 35.4839%;"></div>
+                            </div>
+                            <span>103.9</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Rushing Yards Against Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">5th</span>
+                            <div class="progressbar">
+                                <div style="width: 87.0968%;"></div>
+                            </div>
+                            <span>96.78</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">2nd</span>
+                            <div class="progressbar">
+                                <div style=" width: 96.722%;"></div>
+                            </div>
+                            <span>76.60</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Total Yards Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">6th</span>
+                            <div class="progressbar">
+                                <div style="width: 83.871%;"></div>
+                            </div>
+                            <span>406.1</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">15th</span>
+                            <div class="progressbar">
+                                <div style=" width: 54.8387%;"></div>
+                            </div>
+                            <span>377.8</span>
+                        </div>
+                    </div>
+                    <div class="compare">
+                        <div class="compare-title">Total Yards Against Per Game</div>
+                        <div>
+                            <img src="./assets/los.png" alt="los">
+                            <span class="f">1st</span>
+                            <div class="progressbar">
+                                <div style="width: 100%;"></div>
+                            </div>
+                            <span>296.4</span>
+                        </div>
+                        <div>
+                            <img src="./assets/tampa.png" alt="los">
+                            <span class="f">3rd</span>
+                            <div class="progressbar">
+                                <div style=" width: 93.5484%;"></div>
+                            </div>
+                            <span>300.03</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-games">
+                <div class="header">
+                    <h4>Recent Games</h4>
+                </div>
+                <div class="body">
+                    <table cellspacing="5">
+                        <tbody><tr>
+                            <th colspan="5">
+                                <div>
+                                    <img style="vertical-align: middle" width="30px" src="./assets/los.png" alt="los">
+                                    <span>Los Angeles Rams</span>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Nov 16</td>
+                            <td>vs</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_SEA_wbg.png" alt="sea"> Seattle</td>
+                            <td class="win">W</td>
+                            <td>23-16</td>
+                        </tr>
+
+                        <tr>
+                            <td>Nov 1</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_MIA_wbg.png" alt="mia"> Miami</td>
+                            <td class="loss">L</td>
+                            <td>28-17</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 27</td>
+                            <td>vs</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/bears_wbg.png" alt="chi"> Chicago</td>
+                            <td class="win">W</td>
+                            <td>24-10</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 19</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_SF_wbg.png" alt="sf"> San Francisco</td>
+                            <td class="loss">L</td>
+                            <td>24-16</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 11</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/washington_wbg.png" alt="wash"> Washington</td>
+                            <td class="win">W</td>
+                            <td>30-10</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <div style="text-align: left;">
+                                    <a href="#" style="">LA Rams Schedule</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+
+                    <table cellspacing="5">
+                        <tbody><tr>
+                            <th colspan="5">
+                                <div>
+                                    <img style="vertical-align: middle" width="30px" src="./assets/tampa.png" alt="tampa">
+                                    <span>Tampa Bay Buccaneers</span>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Nov 15</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_CAR_wbg.png" alt="car"> Carolina</td>
+                            <td class="win">W</td>
+                            <td>46-23</td>
+                        </tr>
+                        <tr>
+                            <td>Nov 9</td>
+                            <td>vs</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_NO_wbg.png" alt="no"> New Orleans</td>
+                            <td class="loss">L</td>
+                            <td>38-3</td>
+                        </tr>
+                        <tr>
+                            <td>Nov 3</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_NYG_wbg.png" alt="nyg"> NY Giants</td>
+                            <td class="win">W</td>
+                            <td>25-23</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 26</td>
+                            <td>@</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/raiders_wbg.png" alt="las"> Las Vegas</td>
+                            <td class="win">W</td>
+                            <td>45-20</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 19</td>
+                            <td>vs</td>
+                            <td>
+                                <img style="vertical-align: middle" width="25px" src="./assets/2019_GB_wbg.png" alt="gb"> Green Bay</td>
+                            <td class="win">W</td>
+                            <td>38-10</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">
+                                <div style="text-align: left;">
+                                    <a href="#" style="">Tampa Bay Schedule</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assets/app.js"></script>
+
+
+
+</body></html>

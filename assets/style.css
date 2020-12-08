@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    top: 0px;
+    width: 100vw;
+    color: black;
+    position: fixed;
+    /* overflow: hidden; */
+    margin-left: 3px;
+    background-color: #fff;
+    /* border: 1px solid #e4e0e9; */
+    /* box-shadow: 0px 0px 3px 0px #e4e0e9; */
+    background: black;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8)!important;
+    z-index: 100;
+}
+nav>ul{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-bottom: 2px; */
+  /* max-width: 1100px; */
+}
+nav a{
+    margin: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+}
+nav i a{
+  transition-duration: 0.4s;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+}
+nav ul i:hover>a{
+border-bottom: 3px solid #ff520d;
+}
+nav ul i .dropdown-list li:hover a,
+nav ul i:hover>a{
+  color: #ff520d;
+  transition-duration: 0.4s;
+}
+nav a:hover , #dropDown>ul>i:hover{
+    /* color: #87838d; */
+
+}
+
+/* #dropDown{
+    position: relative;
+    overflow: visible;
+}
+#dropDown>ul{
+    top: 0px;
+    left: 15px;
+    z-index: 53453;
+    display: none;
+    position: absolute;
+    padding: 2.5px 5px;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid #e4e0e9;
+}
+#dropDown>ul>i{
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+} */
+.show{
+    display: block !important;
+}
+.dropdown-link .dropdown-list{
+  position: absolute;
+  /* top: 5px; */
+  /* z-index: 1000; */
+  background: black;
+  /* box-shadow: 0px 0px 4px 0px black; */
+  padding: 10px 15px;
+  transform: translate(-15px,8px);
+  transform: ;
+  display: none;
+  min-width: 200px;
+}
+.dropdown-link .dropdown-list ul{
+  list-style: none;
+}
+.dropdown-link .dropdown-list ul li a{
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.showDropDown{
+  display: block !important;
+
+}
+/* Tab Styling */
+.tabs{
+    width: 100%;
+    float: left;
+    background-color: white;
+    margin-top: 30px;
+}
+.tabs>ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e4e0e9;
+    max-width: 900px;
+    min-width: 880px;
+    margin: 20px auto;
+}
+.tabs>ul>li:first-child{
+    margin-left: 0px !important;
+}
+.active{
+    font-weight: 600;
+    color: black !important;
+    border-bottom: 1px solid black;
+}
+.tabs>ul>li{
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 0px;
+    font-size: 13px;
+    list-style: none;
+    color: darkgray;
+    margin-bottom: 0px;
+}
+.tabs>ul>li:hover{
+    color: rgb(114, 112, 112);
+}
+
+/* Tab container */
+.tabContiner>div{
+    display: none;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    min-width: 880px;
+    /* overflow-x: scroll; */
+    /* border: 1px solid #e4e0e9;             */
+}
+.showTab{
+    display: block !important;
+}
+
+/* odds  styling*/
+.oddscontiner{
+    width: 95%;
+
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 5px;
+    align-items: center;
+    /* border: 1px solid #e4e0e9; */
+    justify-content: space-between;
+}
+.oddscontiner>table{
+    width: 75%;
+    margin: 5px 10px;
+    font-size: 13px;
+    text-align: left;
+}
+.oddscontiner>table td{
+    font-weight: bold;
+    width: calc(70% / 7);
+}
+.oddscontiner .oddsButton{
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #e4e0e9;
+}
+.oddscontiner .oddsButton button{
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: white;
+}
+.oddscontiner .oddsButton button:hover{
+    transition: 0.5;
+    background-color: rgba(228, 224, 233, 0.173);
+}
+
+/* inj-stat styling*/
+
+.inj-stat{
+    display: flex;
+    margin-top: 20px;
+    /* align-items: center; */
+    flex-direction: row;
+    justify-content: center;
+}
+.injuries,.leaders{
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+    /* display: flex; */
+    padding-left: 0px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.injuries>.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.leaders>.header h4,
+.injuries>.header h4{
+  font-size: 16px;
+  font-weight: bold;
+}
+.injuries>.header a{
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.injuries>.body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.injuries>.body>.los , .injuries>.body>.tampa , .stats-body .los{
+    width: 99%;
+    margin: 15px 0 10px 0;
+
+}
+.injuries>.body>.los>.logo , .injuries>.body>.tampa>.logo , .stats-body>.los>.logo{
+  margin-bottom: 5px;
+}
+.injuries>.body>.los>.logo img , .injuries>.body>.tampa>.logo img , .stats-body>.los>.logo img{
+    width: 27px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.injuries>.body>.los>.logo span , .injuries>.body>.tampa>.logo span  , .stats-body>.los>.logo span{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+
+}
+.injuries>.body>.los table , .injuries>.body>.tampa table{
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+}
+.injuries>.body>.los table th ,
+.injuries>.body>.los table td ,
+.injuries>.body>.tampa table th,
+.injuries>.body>.tampa table td{
+    padding: 6px 5px;
+}
+.injuries>.body>.los table th:nth-of-type(1) ,
+.injuries>.body>.los table td:nth-of-type(1) ,
+.injuries>.body>.tampa table th:nth-of-type(1),
+.injuries>.body>.tampa table td:nth-of-type(1){
+  width: 195px;
+}
+.injuries>.body>.los table th:nth-last-of-type(1) ,
+.injuries>.body>.los table td:nth-last-of-type(1) ,
+.injuries>.body>.tampa table th:nth-last-of-type(1),
+.injuries>.body>.tampa table td:nth-last-of-type(1){
+  width: 48px;
+  text-align: right;
+}
+.injuries>.body>.los table td img , .injuries>.body>.tampa table td img{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.injuries>.body>.los table td a , .injuries>.body>.tampa table td a {
+    margin: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.injuries>.body>.los table td a:hover , .injuries>.body>.tampa table td a:hover {
+    text-decoration: underline;
+}
+.injuries>.body>.los table tr:first-child  , .injuries>.body>.tampa table tr:first-child{
+    color: white;
+    text-align: left;
+    background-color: rgb(3, 32, 47);
+}
+.injuries>.body>.tampa table tr:first-child{
+  background-color: rgb(0, 118, 182);
+}
+.injuries>.body>.los table tr:nth-child(2), .injuries>.body>.los table tr:nth-child(4), .injuries>.body>.tampa table tr:nth-child(2), .injuries>.body>.tampa table tr:nth-child(4){
+    background-color: white;
+}
+.injuries>.body>.los table tr:nth-child(3), .injuries>.body>.tampa table tr:nth-child(3){
+    background-color: #f1f1f5;
+}
+
+/* leaders styling */
+.leaders>.body{
+    width: 100%;
+}
+.leaders>.body>.teamNames{
+    display: flex;
+
+    margin: 15px 10px 10px 10px;
+    justify-content: space-between;
+}
+.leaders>.body>.teamNames>.tampaTeam img,
+.leaders>.body>.teamNames>.losTeam img{
+    width: 27px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.leaders>.body>.teamNames>.tampaTeam img{
+  margin-right: 0;
+  margin-left: 10px;
+}
+.leaders>.body>.teamNames>.tampaTeam span,
+.leaders>.body>.teamNames>.losTeam span{
+    font-size: 13px;
+    font-weight: 500;
+}
+/* comparison */
+.leaders>.body>.comparison{
+    padding: 10px;
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+.leaders>.body>.comparison div{
+    width: calc(100% /3);
+}
+.leaders>.body>.comparison div img{
+    cursor: pointer;
+    width: 90px;
+    height: 60px;
+    margin-bottom: 3px;
+}
+.leaders>.body>.comparison div p.name{
+
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+}
+.leaders>.body>.comparison div p.info{
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+
+}
+.leaders>.body>.comparison div.right{
+    text-align: right;
+}
+.leaders>.body>.comparison div.center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.leaders>.body>.comparison div.center span{
+    margin: 3px;
+    font-size: 22px;
+    font-weight: 700;
+    transform: translateY(-20px);
+}
+.leaders>.body>.comparison div.center div:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.leaders>.body>.comparison div.center div:first-child div{
+    margin: 3px;
+    height: 50px;
+    padding: 3px;
+}
+.leaders>.body>.comparison div.center div:first-child .blue{
+    padding: 3px;
+    height: 45px;
+    color: midnightblue;
+    background-color: rgb(3, 32, 47);
+}
+.leaders>.body>.comparison div.center div:first-child .black{
+    color: #333;
+    background-color: rgb(0, 118, 182);
+
+}
+.leaders>.body>.comparison div.center div:last-child{
+    padding: 3px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 3px;
+    background-color: #334;
+    width: 60px;
+}
+/* team-Comparison */
+.team-Comparison, .recent-games{
+    width: 100%;
+}
+.recent-games{
+  margin-top: 40px;
+}
+.team-Comparison>.body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.team-Comparison>.body .compare{
+    margin: 5px 20px;
+    min-width: calc(50% - 20px);
+}
+.team-Comparison>.body .compare:nth-of-type(odd){
+  margin-left: 0;
+}
+.team-Comparison>.body .compare:nth-of-type(even){
+  margin-right: 0;
+}
+.team-Comparison>.body .compare div{
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.team-Comparison>.body .compare .progressbar{
+  margin: 0;
+  height: 16px;
+}
+.team-Comparison>.body .compare .compare-title{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 12px 0 16px 0;
+}
+.team-Comparison>.body .compare div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16px;
+    margin-bottom: 14px;
+}
+.team-Comparison>.body .compare div img{
+    width: 20px;
+    margin-right: 10px;
+}
+.team-Comparison>.body .compare div span{
+  font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px;
+    min-width: 40px;
+    text-align: right;
+}
+.team-Comparison>.body .compare div span.f{
+  font-size: 13px;
+    color:rgb(0, 118, 182);
+    width: 40px;
+    margin-left: 0;
+    text-align: left;
+}
+.team-Comparison>.body .compare div:nth-of-type(2) span.f{
+
+  color: rgb(3, 32, 47);
+}
+.team-Comparison>.body .compare div .progressbar{
+    width: 75%;
+    border-radius: 13px;
+    background-color: #ccc;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+}
+.team-Comparison>.body .compare div .progressbar div{
+    width: 67.7419%;
+    margin: 0px;
+    padding: 6px;
+    border-radius: 13px;
+    background-color: rgb(3, 32, 47);
+    animation: progressbarSlideIn 1s 1;
+
+}
+.team-Comparison>.body .compare > div:nth-last-of-type(1) .progressbar div{
+
+  background-color: rgb(0, 118, 182);
+  /* background-color: red; */
+
+}
+@keyframes progressbarSlideIn {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.recent-games>.body{
+    display: flex;
+    margin: 10px 0px;
+    /* align-items: center; */
+    justify-content: center;
+}
+.recent-games>.body table{
+    width: 49%;
+    margin: 10px;
+    text-align: center;
+}
+.recent-games>.body table:nth-of-type(1){
+  margin-left: 0;
+}
+.recent-games>.body table:nth-of-type(2){
+  margin-right: 0;
+}
+.recent-games>.body table th div{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #e4e0e9;
+    padding: 6px 0;
+}
+.recent-games>.body table td , .recent-games>.body table th{
+  padding: 12px 0;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+
+}
+.recent-games>.body table tr:nth-of-type(1) th{
+  padding: 0;
+}
+.recent-games>.body table tr:nth-of-type(1):hover{
+  background: none;
+  cursor: inherit;
+
+}
+.recent-games>.body table tr:hover{
+  background: #f2f8ff;
+  cursor: pointer;
+}
+.recent-games>.body table th img{
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 27px;
+  height: 27px;
+}
+.recent-games>.body table td,
+ .recent-games>.body table th{
+   width: calc(2 * 50% / 12);
+ }
+ .recent-games>.body table td:nth-of-type(3) img{
+   width: 20px;
+   height: 20px;
+   margin-right: 6px;
+ }
+
+   .recent-games>.body table td:nth-of-type(1) ,
+    .recent-games>.body table th:nth-of-type(1){
+      width: 61px;
+    }
+    .recent-games>.body table td:nth-of-type(2) ,
+     .recent-games>.body table th:nth-of-type(2){
+       width: 21px;
+     }
+     .recent-games>.body table td:nth-of-type(3) ,
+      .recent-games>.body table th:nth-of-type(3){
+        width: 220px;
+      }
+      .recent-games>.body table td:nth-of-type(4) ,
+       .recent-games>.body table th:nth-of-type(4){
+         width: 48px;
+       }
+       .recent-games>.body table td:nth-of-type(5) ,
+        .recent-games>.body table th:nth-of-type(5){
+          width: 80px;
+        }
+.recent-games>.body table td:nth-of-type(odd){
+  text-align: left;
+}
+.recent-games>.body table td:nth-last-of-type(1){
+  text-align: right;
+}
+ .recent-games>.body table tr:nth-last-of-type(1) td div{
+   margin-top: 20px;
+ }
+  .recent-games>.body table tr:nth-last-of-type(1) td div a{
+    color: #0081f2;
+    text-decoration: none;
+  }
+  .recent-games>.body table tr:nth-last-of-type(1) td div a:hover{
+    text-decoration: underline;
+  }
+.recent-games>.body table .win{
+    color: limegreen;
+    font-weight: bold;
+}
+.recent-games>.body table .loss{
+    color: red;
+    font-weight: bold;
+}
+
+/* Stats */
+
+.stats>.stats-header{
+    width: 50%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 80px;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #333;
+    background-color: white;
+    justify-content: space-between;
+}
+.stats>.stats-header div{
+    width: 50%;
+    height: 35px;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.stats>.stats-header div:hover,
+.stats>.stats-header div.active-stats{
+    color: #fff;
+    background-color: #333;
+    transition-duration: 0.4s;
+}
+.stats-body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.stats-body .ststs-tems{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.stats-body .ststs-tems img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.stats-body .ststs-tems span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.stats-body .los , .stats-body .tampa{
+    width: calc(50% - 10px);
+    display: inline-block;
+    margin: 10px;
+}
+.stats-body .tampa{
+  margin-right: 0;
+}
+.stats-body .los{
+  margin-left: 0;
+}
+.stats-body table{
+    margin-bottom: 26px;
+    width: calc(100% - 10px);
+    text-align:left !important;
+    font-size: 12px;
+}
+.stats-body table td, .stats-body table th{
+    padding: 7px;
+    width: 43px;
+    text-align: right;
+}
+.stats-body table th{
+  font-size: 12px;
+  font-weight: 500;
+}
+.stats-body table td:nth-of-type(1),
+.stats-body table th:nth-of-type(1){
+  padding-left: 3px;
+  width: 215px;
+  text-align: left;
+}
+.stats-body table td:nth-of-type(1){
+  padding-left: 15px;
+}
+.stats-body .tampa table tr:first-child{
+    color: white;
+    background-color: rgb(0, 118, 182) !important;
+}
+.stats-body table tr:first-child{
+    color: #fff;
+    background-color: rgb(3, 32, 47) !important;
+}
+.stats-body table tr:nth-child(odd){
+    background-color: #f1f1f5;
+}
+.stats-body table tr:nth-child(even){
+    background-color: white;
+}
+
+
+.stats-body.showLaramsStatsTab .ststs-tems .logo,
+.stats-body.showTampabayStatsTab .ststs-tems .logo{
+  width: 100%;
+}
+.stats-body.showTampabayStatsTab .ststs-tems .logo:nth-of-type(1),
+.stats-body.showLaramsStatsTab .ststs-tems .logo:nth-of-type(2){
+  display: none;
+}
+.stats-body.showTampabayStatsTab .los,
+.stats-body.showLaramsStatsTab .tampa{
+  display: none;
+}
+.stats-body.showTampabayStatsTab .tampa,
+.stats-body.showLaramsStatsTab .los{
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.stats-body.showTampabayStatsTab .tampa table td,
+.stats-body.showTampabayStatsTab .tampa table th,
+.stats-body.showLaramsStatsTab .los table td,
+.stats-body.showLaramsStatsTab .los table th{
+  width: 200px;
+}
+.stats-body.showTampabayStatsTab .tampa table td:nth-of-type(1),
+.stats-body.showTampabayStatsTab .tampa table th:nth-of-type(1),
+.stats-body.showLaramsStatsTab .los table td:nth-of-type(1),
+.stats-body.showLaramsStatsTab .los table th:nth-of-type(1){
+  width: calc(100% / 2);
+}
+
+
+
+
+
+.schedule-table-sec{
+
+  max-width: 1120px;
+min-width: 880px;
+  margin: 100px auto 0 auto;
+}
+
+.title-schedule .dropdown-link-schedule{
+  float: right;
+}
+.title-schedule h3{
+  color: #1d1e1f;
+text-align: left;
+display: inline-block;
+font-size: 28px;
+font-weight: 700;
+line-height: 1.1;
+margin-bottom: 15px;
+}
+.dropdown-link-schedule button{
+  background-color: #f9f9fb;
+color: #48494a;
+font-size: 12px;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid #cbccce;
+    border-radius: 40px;
+    /* box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.2); */
+        padding: 0 18px;
+        outline: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        font-weight: 600;
+}
+.dropdown-link-schedule button svg{
+  width: 10px;
+  transform: translateY(2px);
+  margin-left: 10px;
+  /* margin-top: 10px; */
+}
+.dropdown-link-schedule button:hover{
+  background-color: #fff;
+  transition-duration: 0.4s;
+}
+.dropdown-link-schedule .dropdown-list-schedule{
+  position: absolute;
+  /* top: 5px; */
+  z-index: 1000;
+
+  /* box-shadow: 0px 0px 4px 0px black; */
+  padding: 0;
+  width: 180px;
+  height: 300px;
+
+  transform: translateX(-12px);
+  display: none;
+
+}
+.dropdown-link-schedule .dropdown-list-schedule ul{
+  list-style: none;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+    min-height: 90px;
+    background-color: #fff;
+    border-radius: 4px;
+    float: left;
+    position: absolute;
+text-align: left;
+min-width: 100px;
+/* top: 100%; */
+}
+.dropdown-link-schedule .dropdown-list-schedule ul li a{
+font-size: 11px;
+  font-weight: 400;
+  border: 1px solid transparent;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    line-height: 1.15;
+    padding: 8px;
+    text-transform: none;
+    text-decoration: none;
+}
+.dropdown-link-schedule .dropdown-list-schedule ul li a:hover{
+  background: #06c;
+  color: #fff;
+}
+.dropdown-link-schedule .dropdown-list-schedule ul li{
+  border: 0;
+
+padding: 8px 8px 2px 8px;
+    width: 100%;
+    vertical-align: baseline;
+    margin: 0;
+}
+
+.o-filter{
+  margin-bottom: 10px;
+}
+.o-filter .dropdown-link-schedule{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.schedule-table h2{
+  font-size: 16px;
+font-weight: 600;
+height: 44px;
+line-height: 2.8;
+position: relative;
+text-align: left;
+text-transform: capitalize;
+/* z-index: 1000019; */
+color: #2b2c2d;
+}
+.schedule-table table{
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.schedule-table table tr th{
+  margin: 0;
+padding: 0;
+vertical-align: baseline;
+font-size: 11px;
+    font-weight: 600;
+    padding: 5px 10px 5px 0;
+    position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #1d1e1f;
+    border-bottom: 1px #dcdddf solid;
+    border-top: 1px #dcdddf solid;
+
+    /* height: 24px; */
+}
+.schedule-table table tr:nth-of-type(odd){
+  background-color: #f1f1f5;
+}
+.schedule-table table tr:nth-of-type(1),
+.schedule-table table tr:nth-of-type(even){
+background-color: #fff;
+}
+.schedule-table table tr td img{
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  /* float: left; */
+  vertical-align: middle;
+}
+.schedule-table table tr td a{
+  text-decoration: none;
+  text-transform: none;
+}
+.schedule-table table tr td a span{
+  color: #06c;
+    font-family: "Roboto","Arial","Helvetica Neue","Helvetica",sans-serif;
+    font-weight: 400;
+    padding: 0 2px 0 0px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.schedule-table table tr td a span object{
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+.schedule-table table tr td a span svg{
+  height: 15px;
+  width: 15px;
+  color:grey;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.schedule-table table tr td{
+  height: 28px;
+  border-bottom: 1px solid #edeef0;
+  padding-right: 10px;
+}
+.schedule-table table tr td a:hover span{
+  border-bottom: 1px solid #06c;
+}
+.schedule-table table tr td a:not([href]) span{
+color: black;
+}
+.schedule-table table tr td a:not([href]):hover span{
+border-bottom: 0;
+}
+.schedule-table table tr td:nth-of-type(1),
+.schedule-table table tr th:nth-of-type(1){
+  padding-left: 10px;
+  width: 80px;
+}
+.schedule-table table tr td:nth-of-type(2),
+.schedule-table table tr th:nth-of-type(2){
+  width: 70px;
+}
+
+.schedule-table table tr td:nth-of-type(3),
+.schedule-table table tr th:nth-of-type(3){
+  width: 160px;
+}
+.schedule-table table tr td:nth-of-type(4),
+.schedule-table table tr th:nth-of-type(4){
+  width: 160px;
+}
+.schedule-table table tr td:nth-of-type(5),
+.schedule-table table tr th:nth-of-type(5){
+  width: 45px;
+}
+.schedule-table table tr td:nth-of-type(6),
+.schedule-table table tr th:nth-of-type(6){
+  width: 250px;
+}
+.schedule-table table tr td:nth-of-type(7),
+.schedule-table table tr th:nth-of-type(7){
+  width: 100px;
+}
+.schedule-table table tr td:nth-of-type(8),
+.schedule-table table tr th:nth-of-type(8){
+  padding-right: 10px;
+  width: 200px;
+}

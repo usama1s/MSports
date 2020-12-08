@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1, shrink-to-fit=no">
+
+  <title>Sports</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body onclick="">
+
+  <nav>
+    <ul>
+      <i>
+        <a href="#">Sports Home</a>
+      </i>
+      <i class="dropdown-link" id="fantasy-dropdown" onmouseover="openDropdown(this.id)"
+        onmouseout="closeDropdown(this.id)">
+        <a href="#">American Football</a>
+        <div class="dropdown-list">
+          <ul>
+            <li> <a href="#">NFL</a> </li>
+            <li> <a href="#">NCAA </a> </li>
+          </ul>
+        </div>
+      </i>
+      <i>
+        <a href="#">Basketball</a>
+      </i>
+      <i>
+        <a href="#">Hockey</a>
+      </i>
+      <i class="dropdown-link" id="mlb-dropdown" onmouseover="openDropdown(this.id) " onmouseout="closeDropdown(this.id)">
+        <a href="#">Soccer</a>
+        <div class="dropdown-list">
+          <ul>
+            <li> <a href="#">Fantasy Home </a> </li>
+            <li> <a href="#">Fantasy Football </a> </li>
+            <li> <a href="#">Weekly Rankings </a> </li>
+            <li> <a href="#">Stat Tracker </a> </li>
+            <li> <a href="#">Daily Fantasy </a> </li>
+            <li> <a href="#">Fantasy Profile </a> </li>
+            <li> <a href="#">Yahoo Sports Experts </a> </li>
+            <li> <a href="#">Fantasy State </a> </li>
+            <li> <a href="#">Fantasy Baseball </a> </li>
+            <li> <a href="#">Fantasy Basketball </a> </li>
+            <li> <a href="#">Fantasy Hockey </a> </li>
+          </ul>
+        </div>
+      </i>
+      <i>
+        <a href="#">Golf</a>
+      </i>
+      <i>
+        <a href="#">CS:GO</a>
+      </i>
+      <i>
+        <a href="#">LOL</a>
+      </i>
+      <i>
+        <a href="#">MMA</a>
+      </i>
+
+      <!-- <i id="dropDown">
+                  <svg class="Cur(p)" width="15" height="14" viewBox="0 0 96 96" data-icon="StreamShare" style="vertical-align: middle; cursor: pointer; margin-top: -1px; color: rgb(0, 0, 0); fill: rgb(0, 0, 0); stroke: rgb(0, 0, 0); stroke-width: 0;">
+                      <path d="M16 38c-5.516 0-10 4.477-10 10 0 5.525 4.484 10 10 10 5.53 0 10-4.475 10-10 0-5.523-4.47-10-10-10zM48 38c-5.516 0-10 4.477-10 10 0 5.525 4.484 10 10 10 5.53 0 10-4.475 10-10 0-5.523-4.47-10-10-10zM80 38c-5.516 0-10 4.477-10 10 0 5.525 4.484 10 10 10 5.53 0 10-4.475 10-10 0-5.523-4.47-10-10-10z"></path>
+                  </svg>
+                  <ul class="drop">
+                      <i style="cursor: pointer;">GameChannel</i>
+                  </ul>
+              </i> -->
+    </ul>
+  </nav>
+
+  <section class="schedule-table-sec">
+    <div class="title-schedule">
+      <h3>NFL Schedule - <span>2020</span></h3>
+
+        <div class="dropdown-link-schedule" id="team-schedule-dropdown" onclick="openDropdownClick(this.id) ">
+          <button class="dd-btn" type="button" name="button"> <span class="dd-btn-span">Team Schedules</span>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="dd-btn-svg svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+              </path>
+            </svg>
+          </button>
+          <div class="dropdown-list-schedule dd-down">
+            <ul>
+              <li><a for="team-schedule-dropdown" id="team-schedule-1" onclick="selectThisOption(this.id)">Arizona Cardinals</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-2" onclick="selectThisOption(this.id)">Atlanta Falcons</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-3" onclick="selectThisOption(this.id)">Baltimore Ravens</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-4" onclick="selectThisOption(this.id)">Buffalo Bills</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-5" onclick="selectThisOption(this.id)">Carolina Panthers</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-6" onclick="selectThisOption(this.id)">Chicago Bears</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-7" onclick="selectThisOption(this.id)">Cincinnati Bengals</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-8" onclick="selectThisOption(this.id)">Cleveland Browns</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-9" onclick="selectThisOption(this.id)">Dallas Cowboys</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-10" onclick="selectThisOption(this.id)">Denver Broncos</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-11" onclick="selectThisOption(this.id)">Detroit Lions</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-12" onclick="selectThisOption(this.id)">Green Bay Packers</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-13" onclick="selectThisOption(this.id)">Houston Texans</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-14" onclick="selectThisOption(this.id)">Indianapolis Colts</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-15" onclick="selectThisOption(this.id)">Jacksonville Jaguars</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-16" onclick="selectThisOption(this.id)">Kansas City Chiefs</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-17" onclick="selectThisOption(this.id)">Las Vegas Raiders</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-18" onclick="selectThisOption(this.id)">Los Angeles Chargers</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-19" onclick="selectThisOption(this.id)">Los Angeles Rams</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-20" onclick="selectThisOption(this.id)">Miami Dolphins</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-21" onclick="selectThisOption(this.id)"  class="default">Minnesota Vikings</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-22" onclick="selectThisOption(this.id)">New England Patriots</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-23" onclick="selectThisOption(this.id)">New Orleans Saints</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-24" onclick="selectThisOption(this.id)">New York Giants</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-24" onclick="selectThisOption(this.id)">New York Jets</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-26" onclick="selectThisOption(this.id)">Philadelphia Eagles</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-27" onclick="selectThisOption(this.id)">Pittsburgh Steelers</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-28" onclick="selectThisOption(this.id)">San Francisco 49ers</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-29" onclick="selectThisOption(this.id)">Seattle Seahawks</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-30" onclick="selectThisOption(this.id)">Tampa Bay Buccaneers</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-31" onclick="selectThisOption(this.id)">Tennessee Titans</a></li>
+              <li><a for="team-schedule-dropdown" id="team-schedule-32" onclick="selectThisOption(this.id)">Washington</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+    </div>
+
+    <div class="o-filter">
+      <div class="dropdown-link-schedule ddd-btn" id="year-dropdown" onclick="openDropdownClick(this.id) ">
+        <button class="dd-btn"  type="button" name="button"><span class="dd-btn-span">2020</span>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="dd-btn-svg svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+            </path>
+          </svg>
+        </button>
+        <div class="dropdown-list-schedule dd-down">
+          <ul>
+            <li><a for="year-dropdown" id="year-2020" onclick="selectThisOption(this.id)">2020</a></li>
+            <li><a for="year-dropdown" id="year-2019" onclick="selectThisOption(this.id)">2019</a></li>
+            <li><a for="year-dropdown" id="year-2018" onclick="selectThisOption(this.id)">2018</a></li>
+            <li><a for="year-dropdown" id="year-2017" onclick="selectThisOption(this.id)" class="default">2017</a></li>
+            <li><a for="year-dropdown" id="year-2016" onclick="selectThisOption(this.id)">2016</a></li>
+            <li><a for="year-dropdown" id="year-2015" onclick="selectThisOption(this.id)">2015</a></li>
+            <li><a for="year-dropdown" id="year-2014" onclick="selectThisOption(this.id)">2014</a></li>
+            <li><a for="year-dropdown" id="year-2013" onclick="selectThisOption(this.id)">2013</a></li>
+            <li><a for="year-dropdown" id="year-2012" onclick="selectThisOption(this.id)">2012</a></li>
+            <li><a for="year-dropdown" id="year-2011" onclick="selectThisOption(this.id)">2011</a></li>
+            <li><a for="year-dropdown" id="year-2010" onclick="selectThisOption(this.id)">2010</a></li>
+            <li><a for="year-dropdown" id="year-2009" onclick="selectThisOption(this.id)">2009</a></li>
+            <li><a for="year-dropdown" id="year-2008" onclick="selectThisOption(this.id)">2008</a></li>
+            <li><a for="year-dropdown" id="year-2007" onclick="selectThisOption(this.id)">2007</a></li>
+            <li><a for="year-dropdown" id="year-2006" onclick="selectThisOption(this.id)">2006</a></li>
+            <li><a for="year-dropdown" id="year-2005" onclick="selectThisOption(this.id)">2005</a></li>
+            <li><a for="year-dropdown" id="year-2004" onclick="selectThisOption(this.id)">2004</a></li>
+            <li><a for="year-dropdown" id="year-2003" onclick="selectThisOption(this.id)">2003</a></li>
+            <li><a for="year-dropdown" id="year-2002" onclick="selectThisOption(this.id)">2002</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown-link-schedule" id="week-dropdown" onclick="openDropdownClick(this.id) ">
+        <button class="dd-btn" type="button" name="button">
+          <span class="dd-btn-span">Week 12</span>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="dd-btn-svg svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+            </path>
+          </svg>
+        </button>
+        <div class="dropdown-list-schedule dd-down">
+          <ul>
+            <li><a for="week-dropdown" id="week-pw1" onclick="selectThisOption(this.id)">Hall of Fame Weekend</a></li>
+            <li><a for="week-dropdown" id="week-pw2" onclick="selectThisOption(this.id)">Preseason Week 1</a></li>
+            <li><a for="week-dropdown" id="week-pw3" onclick="selectThisOption(this.id)">Preseason Week 2</a></li>
+            <li><a for="week-dropdown" id="week-pw4" onclick="selectThisOption(this.id)">Preseason Week 3</a></li>
+            <li><a for="week-dropdown" id="week-pw5" onclick="selectThisOption(this.id)">Preseason Week 4</a></li>
+            <li><a for="week-dropdown" id="week-1" onclick="selectThisOption(this.id)" >Week 1</a></li>
+            <li><a for="week-dropdown" id="week-2" onclick="selectThisOption(this.id)">Week 2</a></li>
+            <li><a for="week-dropdown" id="week-3" onclick="selectThisOption(this.id)">Week 3</a></li>
+            <li><a for="week-dropdown" id="week-4" onclick="selectThisOption(this.id)">Week 4</a></li>
+            <li><a for="week-dropdown" id="week-5" onclick="selectThisOption(this.id)">Week 5</a></li>
+            <li><a for="week-dropdown" id="week-6" onclick="selectThisOption(this.id)">Week 6</a></li>
+            <li><a for="week-dropdown" id="week-7" onclick="selectThisOption(this.id)">Week 7</a></li>
+            <li><a for="week-dropdown" id="week-8" onclick="selectThisOption(this.id)">Week 8</a></li>
+            <li><a for="week-dropdown" id="week-9" onclick="selectThisOption(this.id)">Week 9</a></li>
+            <li><a for="week-dropdown" id="week-10" onclick="selectThisOption(this.id)">Week 10</a></li>
+            <li><a for="week-dropdown" id="week-11" onclick="selectThisOption(this.id)">Week 11</a></li>
+            <li><a for="week-dropdown" id="week-12" onclick="selectThisOption(this.id)" class="default">Week 12</a></li>
+            <li><a for="week-dropdown" id="week-13" onclick="selectThisOption(this.id)">Week 13</a></li>
+            <li><a for="week-dropdown" id="week-14" onclick="selectThisOption(this.id)">Week 14</a></li>
+            <li><a for="week-dropdown" id="week-15" onclick="selectThisOption(this.id)">Week 15</a></li>
+            <li><a for="week-dropdown" id="week-16" onclick="selectThisOption(this.id)">Week 16</a></li>
+            <li><a for="week-dropdown" id="week-17" onclick="selectThisOption(this.id)">Week 17</a></li>
+            <li><a for="week-dropdown" id="week-w" onclick="selectThisOption(this.id)">Wild Card</a></li>
+            <li><a for="week-dropdown" id="week-d" onclick="selectThisOption(this.id)">Divisional Round</a></li>
+            <li><a for="week-dropdown" id="week-c" onclick="selectThisOption(this.id)">Conference Championship</a></li>
+            <li><a for="week-dropdown" id="week-p" onclick="selectThisOption(this.id)">Pro Bowl</a></li>
+            <li><a for="week-dropdown" id="week-s" onclick="selectThisOption(this.id)">Super Bowl</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-table" >
+      <h2>Thursday, 26 November</h2>
+      <table cellspacing="0">
+        <tbody>
+          <tr>
+            <th>DATE</th>
+            <th>TIME</th>
+            <th>HOMETEAM</th>
+            <th>AWAYTEAM</th>
+            <th>NAT TV</th>
+
+            <th>STADIUM NAME, CITY (STATE)</th>
+            <th>PLAYING SURFACE</th>
+            <th>FORECAST</th>
+          </tr>
+          <tr>
+            <td><a ><span>2020-09-10</span></a>  </td>
+            <td><a ><span>12:00 PM</span></a> </td>
+            <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+            <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta Atlanta</span></a></td>
+            <td><a ><span>CBS</span></a> </td>
+            <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+            <td><a ><span>Grass</span></a> </td>
+            <td><a ><span>
+              <object  data="assets/svgs/clear-sky.svg" type="image/svg+xml"></object>
+
+              Clear Sky</span></a> </td>
+          </tr>
+          <tr>
+            <td><a ><span>2020-09-10</span></a>  </td>
+            <td><a ><span>12:00 PM</span></a> </td>
+            <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+            <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+            <td><a ><span>CBS</span></a> </td>
+            <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+            <td><a ><span>Grass</span></a> </td>
+            <td><a ><span>
+              <object  data="assets/svgs/few-clouds.svg" type="image/svg+xml"></object>
+              Few Clouds</span></a> </td>
+          </tr>
+          <tr>
+            <td><a ><span>2020-09-10</span></a>  </td>
+            <td><a ><span>12:00 PM</span></a> </td>
+            <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+            <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+            <td><a ><span>CBS</span></a> </td>
+            <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+            <td><a ><span>Grass</span></a> </td>
+            <td><a ><span>
+<object  data="assets/svgs/heavy-rain.svg" type="image/svg+xml"></object>
+              Heavy Rain</span></a> </td>
+          </tr>
+          <tr>
+            <td><a ><span>2020-09-10</span></a>  </td>
+            <td><a ><span>12:00 PM</span></a> </td>
+            <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+            <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+            <td><a ><span>CBS</span></a> </td>
+            <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+            <td><a ><span>Grass</span></a> </td>
+            <td><a ><span>
+              <object  data="assets/svgs/light-rain.svg" type="image/svg+xml"></object>
+              Light Rain</span></a> </td>
+          </tr>
+          <tr>
+            <td><a ><span>2020-09-10</span></a>  </td>
+            <td><a ><span>12:00 PM</span></a> </td>
+            <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+            <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+            <td><a ><span>CBS</span></a> </td>
+            <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+            <td><a ><span>Grass</span></a> </td>
+            <td><a ><span>
+<object  data="assets/svgs/light-snow.svg" type="image/svg+xml"></object>
+              Light Snow</span></a> </td>
+          </tr>
+
+          <tr>
+            <td><a ><span>2020-09-10</span></a>  </td>
+            <td><a ><span>12:00 PM</span></a> </td>
+            <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+            <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+            <td><a ><span>CBS</span></a> </td>
+            <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+            <td><a ><span>Grass</span></a> </td>
+            <td><a ><span>
+<object  data="assets/svgs/heavy-snow.svg" type="image/svg+xml"></object>
+              Heavy Snow</span></a> </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+
+        <div class="schedule-table">
+          <h2>Thursday, 26 November</h2>
+          <table cellspacing="0">
+            <tbody>
+              <tr>
+                <th>DATE</th>
+                <th>TIME</th>
+                <th>HOMETEAM</th>
+                <th>AWAYTEAM</th>
+                <th>NAT TV</th>
+
+                <th>STADIUM NAME, CITY (STATE)</th>
+                <th>PLAYING SURFACE</th>
+                <th>FORECAST</th>
+              </tr>
+              <tr>
+                <td><a ><span>2020-09-10</span></a>  </td>
+                <td><a ><span>12:00 PM</span></a> </td>
+                <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+                <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+                <td><a ><span>CBS</span></a> </td>
+                <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+                <td><a ><span>Grass</span></a> </td>
+                <td><a ><span>
+<object  data="assets/svgs/moderate-rain.svg" type="image/svg+xml"></object>
+                  Moderate Rain</span></a> </td>
+              </tr>
+
+              <tr>
+                <td><a ><span>2020-09-10</span></a>  </td>
+                <td><a ><span>12:00 PM</span></a> </td>
+                <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+                <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+                <td><a ><span>CBS</span></a> </td>
+                <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+                <td><a ><span>Grass</span></a> </td>
+                <td><a ><span>
+<object  data="assets/svgs/overcast-clouds.svg" type="image/svg+xml"></object>
+                  Overcast Clouds</span></a> </td>
+              </tr>
+              <tr>
+                <td><a ><span>2020-09-10</span></a>  </td>
+                <td><a ><span>12:00 PM</span></a> </td>
+                <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+                <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+                <td><a ><span>CBS</span></a> </td>
+                <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+                <td><a ><span>Grass</span></a> </td>
+                <td><a ><span>
+<object  data="assets/svgs/unknown-weather.svg" type="image/svg+xml"></object>
+                  Unknown Weather</span></a> </td>
+              </tr>
+              <tr>
+                <td><a ><span>2020-09-10</span></a>  </td>
+                <td><a ><span>12:00 PM</span></a> </td>
+                <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+                <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+                <td><a ><span>CBS</span></a> </td>
+                <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+                <td><a ><span>Grass</span></a> </td>
+                <td><a ><span>
+<object  data="assets/svgs/scattered-clouds.svg" type="image/svg+xml"></object>
+                  Scattered Clouds</span></a> </td>
+              </tr>
+              <tr>
+                <td><a ><span>2020-09-10</span></a>  </td>
+                <td><a ><span>12:00 PM</span></a> </td>
+                <td><a href="#"> <img src="./assets/los.png" alt="los.png"> <span> Los Vegas</span></a></td>
+                <td><a href="#"> <img src="./assets/tampa.png" alt="tampa"> <span> Atlanta</span></a></td>
+                <td><a ><span>CBS</span></a> </td>
+                <td><a ><span>State Farm Stadium, Glendate (AZ)</span></a> </td>
+                <td><a ><span>Grass</span></a> </td>
+                <td><a ><span>
+                  <object  data="assets/svgs/broken-clouds.svg" type="image/svg+xml"></object>
+                  Broken Clouds</span></a> </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+
+  </section>
+
+  <script src="./assets/app.js"></script>
+
+
+
+</body>
+
+</html>
